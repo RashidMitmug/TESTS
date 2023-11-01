@@ -12,8 +12,9 @@ body{
 /*nAv*/
 .top{
     background-color: #D59D4A;
-    width:100vw;
-   
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
 }
 .top div{
     float:left;
@@ -47,8 +48,8 @@ body{
     width:15px;
 }
 .bot{
+    position: fixed;
     background-color: #B28543;
-    position:absolute;
     bottom:0%;
     width:100vw;
     color:rgb(255, 255, 255);
@@ -57,6 +58,17 @@ body{
 }
 .bot p{
     padding:5px;
+    display: inline-block;
+}
+.bot .socmed{ 
+    display: inline-block;
+    float:right;
+    padding: 5px;
+
+}
+.bot .socmed img{
+    width:20px;
+    border-radius: 5px; /*gives round edges to the images*/
 }
 /*index*/
 #midback{
@@ -97,10 +109,11 @@ body{
     padding-left:5px;
     font-size:small;
 }
+
 /*dir*/
 #head{
     padding-left:20vw;
-    padding-top: 5vw;
+    padding-top: 10vh;
 
 }
 #hc{
@@ -137,12 +150,10 @@ body{
 .mid #body{
     text-align:justify;
     padding-left: 20vw;
-    padding-top:1vw;
-
+    padding-top:8vh;
 }
 #body p{
     width:60vw;
-
 }
 .mid #scontent{
     padding-left: 20vw;
@@ -168,18 +179,49 @@ body{
 #cc img{
     width:35vw;
 }
+/*main*/
+.button{
+    font-family: 'Jomhuria', serif;
+    color:#B28543;
+    border:none;
+    background-color: black;
+}
+#quant{
+    color:red;
+    display: none;
+}
+.button:focus #quant{
+    display: block;
+}
+.button:focus{
+    background-color: rgb(255, 255, 255);
+}
+.button:target  #quant{
+    display: block;
+}
+.button:hover{
+    color:#D59D4A;
+}
+
 /*reference*/
 #refe{
     padding-left: 20vw;
-    padding-top:1vw;
+    padding-top:1vw;   
 }
 #refe #rc{
     width:65vw;
     background-color: #EDC283;
 }
+#rc li{
+    text-align: justify;
+    font-size: small;
+    padding: 10px;
+    width: 30vw;
+}
 #rc p{
     font-size: small;
     letter-spacing: 5px;
+    width: 60vw;
 }
 /*fonts*/
 .jomhuria{
